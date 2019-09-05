@@ -1,0 +1,21 @@
+﻿@model WebApplication1.Models.WifiInfo
+@{
+    ViewBag.Title = "Добавление вафли";
+}
+<form asp-action="create" asp-controller="log">
+    <div class="form-group">
+        <label asp-for="SSID" class="control-label">SSID</label>
+        <input type="text" asp-for="SSID" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="BSSID" class="control-label">BSSID</label>
+        <input type="text" asp-for="BSSID" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="AvgLevel" class="control-label">AvgLevel</label>
+        <input type="number" asp-for="AvgLevel" class="form-control" />
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Send" class="btn btn-default" />
+    </div>
+</form>
